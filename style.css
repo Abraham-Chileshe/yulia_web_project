@@ -160,3 +160,38 @@ body {
 .card-body {
     background-color:var(--bg-color);
 }
+
+.faq-column h3{
+    font-weight: 600;
+}
+
+.faq-column h5{
+    font-weight: 600;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+.btn-dark {
+    background-color: black;
+    padding: 0.75rem 0.1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    transition:1s ease-in;
+}
+.btn-dark:hover {
+    background-color: #ffffff;
+    color:black;
+    transition:1s ease-out;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .faq-column {
+        margin-bottom: 2rem;
+    }
+}
+.active_section h2{
+    font-weight: 600;
+    margin-top:2em;
+    margin-bottom:1em;
+}
