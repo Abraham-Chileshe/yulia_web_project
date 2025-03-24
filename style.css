@@ -1,0 +1,162 @@
+:root {
+    --bg-color: #DFCDC1;
+    --green: #9EB4A8;
+    --font-color: black;
+    --title-color: #3F6767;
+    --btn-bg: #F0A556;
+    --btn-bg-hover: #b57735;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  var(--bg-color);
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+.search-form {
+    padding-right: 15px;
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.nav-link {
+    margin-left: 15px;
+    color:var(--font-color);
+}
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+    .search-form {
+        padding-right: 0;
+        margin-bottom: 10px; 
+
+       
+    }
+    .nav-links {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+/* Search Bar Styling */
+.custom-search-bar {
+    background-color:  var(--green);
+    border-radius: 25px !important; /* More rounded corners */
+    padding: 2px;
+    border: none;
+    overflow: hidden; /* Ensures child elements respect the border radius */
+}
+
+.search-icon {
+    background-color: transparent !important;
+    border: none !important;
+    padding-left: 15px; /* Add some padding to the icon */
+}
+
+.search-input {
+    background-color: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    padding-left: 10px; /* Adjust input padding */
+}
+
+.search-input:focus {
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.search-btn {
+    background-color: var(--green);
+    color: rgb(0, 0, 0);
+    border: none;
+    transition: all 0.3s ease;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    padding-right: 20px;
+}
+
+.search-btn:hover {
+    background-color: #687E7A;
+    color: white;
+}
+
+
+.title_section{
+    padding-top:2em;
+}
+
+
+/* Custom orange button with hover effects */
+.btn-custom-orange {
+    background-color: var(--btn-bg);
+    position:relative;
+    border-color: var(--btn-bg);
+    border-radius:50px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left:2em;
+    font-size: 1.1rem;
+    padding: 0.5em 2em;
+    top:-0.5em !important;
+    
+}
+.btn-custom-orange:hover {
+    background-color: var( --btn-bg-hover);
+    border-color: var( --btn-bg-hover);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.title_section h1{
+    color: var(--title-color);
+
+    font-weight: bold !important;
+    font-style: italic;
+
+    font-size: calc(2.5rem + 1.5vw);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    /* Mobile-specific adjustments */
+    .btn-custom-orange {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.9rem;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-img-top {
+
+    object-fit: cover;
+    height: 300px;
+}
+.card-text {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size:25px;
+}
+
+.photos_section{
+    padding-top:3em;
+}
+.card-body {
+    background-color:var(--bg-color);
+}
